@@ -32,3 +32,20 @@ java -jar lombok.jar
 # botão direito em cima do projeto, ir em Spring, Add Starters e escolhe a dependencia. Exemplo Lombok
 
 ```
+
+## Chamando a IDE
+
+Criei um script em Shell, [eclipse-spring](./public/eclipse-spring), para chamar a IDE. Coloque no diretório "/bin"
+
+```s
+#!/bin/bash
+# Author: Walter Paulo
+# Email: walter0paulo@hotmail.com
+# Data: 2022-4-16
+# Abrir programa Spring Tools 4
+
+echo "Iniciando Spring Tools 4..."
+/opt/sts-4.15.3.RELEASE/SpringToolSuite4 > /dev/null 2>&1 &
+echo "PROCESSO: "$$
+
+```
